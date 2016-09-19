@@ -141,8 +141,35 @@ html, body{
    background: #20DDAA;
    border: 2px solid #20DDAA;
    box-shadow: 0px 2px 2px 0px #11755A;
+   }
+
+   .btn-facebook {
+   border-radius: 4px;
+   color:#FFFFFF;
+   font-weight: 700;
+   text-decoration: none;
+   padding:10px 30px;
+   /* FB Rectangle: */
+   background: #204695;
+   box-shadow: 0px 1px 2px 0px rgba(40,63,110,0.50);
+   border-radius: 4px;
+   }
+
+ .btn-twitter {
+   border-radius: 4px;
+   color:#FFFFFF;
+   font-weight: 700;
+   text-decoration: none;
+   padding:10px 30px;
+   /* twitter Rectangle: */
+   background: #55ACEE;
+   box-shadow: 0px 1px 2px 0px rgba(56,118,167,0.08);
+   border-radius: 4px;
+  
    
-}
+   }
+
+
 
 
 
