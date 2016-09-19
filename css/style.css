@@ -289,6 +289,7 @@ html, body{
    color:#FFFFFF;
    text-align: left;
    font-style: italic;
+   font-weight: lighter;
    background:#08465E;
    position: relative;
    padding:30px;
@@ -329,7 +330,78 @@ html, body{
  .move{
    padding-top: 20px;
  }
+
+  /* FOOTER */
+ footer {
+   background-color: #08465E;
+   background-image: linear-gradient(to top,
+      #00ACBE 0%, #00ACBE 50%, #08465E 50%, #08465E 100%);
+   color: #FFFFFF;
+   height: 150px;
+   position: relative;
+   overflow: hidden;
+   z-index: 0;
+ }
+ footer p, footer nav ul {
+   font-size:14px;
+   font-weight:100;
+   text-align: center;
+   margin: 10px auto 0;
+ }
+ footer nav ul li {
+   list-style-type: none;
+   display: inline;
+ }
+ footer nav ul li a {
+   color:#FFFFFF;
+   text-decoration: none;
+ }
+ footer .right-footer-block {
+   background-color: transparent;
+ }
+ footer .logo{
+   padding: 2.35em 0;
+   margin: 0 auto;
+   display: block;
+ }
  
+  @media (min-width: 992px){
+   footer{
+     background-color: #3498DB;
+     background-image: linear-gradient(to left,
+        #00ACBE 0%, #00ACBE 33.33337%, #08465E 33.33337%, #08465E 100%);
+     height: 100px;
+   }
+   footer p, footer nav ul{
+     padding: 2em 0;
+     text-align: left;
+   }
+   footer .right-footer-block {
+     background-color: #00ACBE;
+   }
+   footer .logo{
+     padding: 2em 0 2em 1.5em;
+   }
+ }
+
+ /*SIGNUP TODAY*/
+
+.Sign_up{
+   margin-top: -100px;
+   padding:4em 0;
+   text-align: center;
+   display:block;
+
+ }
+}
+ .Sign_up h2{
+   
+   color:#00ACBE;
+ }
+
+ .sign{
+   padding-top: 20px;
+ }
 
 
 
