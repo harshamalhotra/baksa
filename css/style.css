@@ -14,6 +14,7 @@ html, body{
    font-family: 'Nunito', Helvetica, Arial, sans-serif;
  }
 
+
  /*the h2 headers like create notes, save images will have a 28 pixel font size and the font weight will be normal with the bottom margin as 5px*/
  h2 {
    font-size:28px;
@@ -392,17 +393,50 @@ html, body{
    background:#F7F7F7;
  }
  .left-nav {
-   height: 100vh;
-   width:14.66666667%;
-   color:#FFFFFF;
-   background: #08465E;
-   /* Nav Bar: */
-   background-image: linear-gradient(-225deg, #077DAA 0%, #08465E 100%);
    
-   float:left;
-   position: fixed;
-   display:block;
+
+    height: 100%;
+    width:280px;
+    position: absolute;
+     -webkit-transition: all 0.3s ease-in-out;
+   -moz-transition: all 0.3s ease-in-out;
+   -o-transition: all 0.3s ease-in-out;
+   transition: all 0.3s ease-in-out;
+   transform: translate(-280px,0);
+     -webkit-transform: translate(-280px,0); /** Chrome & Safari **/
+     -o-transform: translate(-280px,0); /** Opera **/
+     -moz-transform: translate(-280px,0); /** Firefox **/
+ 
+   
  }
+ .left-nav.open {
+   display:block;
+   width:280px;
+   -webkit-transition: all 0.3s ease-in-out;
+   -moz-transition: all 0.3s ease-in-out;
+   -o-transition: all 0.3s ease-in-out;
+   transition: all 0.3s ease-in-out;
+   transform: translate(0,0);
+     -webkit-transform: translate(0,0); /** Chrome & Safari **/
+     -o-transform: translate(0,0); /** Opera **/
+     -moz-transform: translate(0,0); /** Firefox **/
+     z-index: 100;
+     background-image: linear-gradient(206deg, #00ACBE 0%, #08465E 94%);
+ }
+ .hamburger {
+   position:absolute;
+   z-index: 1000;
+   background:#08465E;
+   color:#FFF;
+   text-decoration: none;
+   font-size: 22px;
+   padding: 10px 15px;
+   border-radius: 4px;
+   left: 5px;
+   top: 15px;
+ }
+
+
  .left-nav .site-logo {
    padding:20px 0;
    background:#08465E;
@@ -589,8 +623,12 @@ html, body{
    footer .logo{
      padding: 2em 0 2em 1.5em;
    }
+
+
  }
- }
+
+ 
+ 
  @media (min-width: 1200px) {
    .container {
      width: 1170px;
@@ -735,7 +773,7 @@ html, body{
    .content {
      padding:1.5em 1%;
      float:right;
-     width:83.33333333%;
+     width:83.3333333%;
      position: relative;
    }
    .content > .container {
@@ -746,8 +784,34 @@ html, body{
      margin:0 1% 25px;
    }
  }
+ @media (min-width:992px) {
+   .left-nav {
+     height: 100vh;
+     width:14.66666667%;
+     color:#FFFFFF;
+     background: #08465E;
+     background-image: linear-gradient(206deg, #00ACBE 0%, #08465E 94%);
+     float:left;
+     position: fixed;
+     display:block;
+     transform: translate(0,0);
+     -webkit-transform: translate(0,0); /** Chrome & Safari **/
+     -o-transform: translate(0,0); /** Opera **/
+     -moz-transform: translate(0,0); /** Firefox **/
+   }
+   .left-nav.open {
+     width:14.66666667%;
+     transform: translate(0,0);
+     -webkit-transform: translate(0,0); /** Chrome & Safari **/
+     -o-transform: translate(0,0); /** Opera **/
+     -moz-transform: translate(0,0); /** Firefox **/
+   }
+   .hamburger {
+     display:none;
+   }
+ }
 
-
+ 
 
 
 
