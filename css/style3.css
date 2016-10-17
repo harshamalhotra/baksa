@@ -1,0 +1,312 @@
+html,body{
+    overflow-x: hidden;
+}
+
+body{
+    font-family: 'Roboto', sans-serif, Helvetica,Arial; 
+    color: #333333;
+}
+
+ h1, h2, h3, h4, h5, h6 {
+   font-family: 'Nunito', Helvetica, Arial, sans-serif;
+ }
+
+h2 {
+   font-size:28px;
+   font-weight: normal;
+   margin-bottom: 5px;
+ }
+
+
+ p {
+   font-size:16px;
+   line-height: 19px;
+   font-weight: 100;
+ }
+* GRID */
+ .container {
+   margin-right: auto;
+   margin-left: auto;
+   padding-left: 15px;
+   padding-right: 15px;
+   position: relative;
+ }
+ .container:before,
+ .container:after {
+   content: " ";
+   display: table;
+ }
+ .container:after {
+   clear: both;
+ }
+ .one-half, .one-third, .one-fourth {
+   width:96%;
+   float:left;
+   position:relative;
+   min-height: 1px;
+   margin:0 2% 20px;
+ }
+
+
+
+
+/*HEADER*/
+ header {
+   color:#FFFFFF;
+   background: #34495E;
+   
+   background-image: linear-gradient(206deg, #077DAA 0%, #08465E 100%);
+ }
+header nav {
+   padding:1em 0;
+ }
+ header nav ul {
+   display:inline;
+   text-align: right;
+   float:right;
+   margin:0;
+ }
+ header nav ul > li {
+   list-style-type: none;
+   display: inline-block;
+   margin:0 15px;
+ }
+header nav ul > li.btn-outline {
+   padding:10px 15px;
+   border:2px solid #FFFFFF;
+   border-radius: 4px;
+ }
+ header nav ul > li.btn-outline:hover {
+   background:#FFFFFF;
+ }
+ header nav ul > li > a {
+   color:#FFFFFF;
+   text-decoration: none;
+ }
+ header nav ul > li.btn-outline:hover > a {
+   color:#34495E;
+ }
+header .hero {
+   text-align: center;
+   display:block;
+   position: relative;
+ }
+header .hero h1 {
+   font-size:48px;
+   font-weight: normal;
+   margin:95px 0 0;
+   text-align: center;
+ }
+ header .hero p {
+   font-size: 22px;
+   line-height: 26px;
+   font-weight: 100;
+   margin:10px 0 40px;
+   text-align: center;
+ }
+ header .hero img {
+   display: block;
+   margin:6em auto 0;
+ }
+
+/*BUTTONS*/
+.btn {
+   border-radius: 4px;
+   color:#FFFFFF;
+   font-weight: 700;
+   text-decoration: none;
+   padding:10px 30px;
+   background: #20DDAA;
+   border: 2px solid #20DDAA;
+   box-shadow: 0px 2px 2px 0px #11755A;
+
+   }
+  .btn1{
+         position:absolute;
+   top:50%;
+   left:45%;
+   margin-top:-160px;
+   margin-left:-30px;
+    
+   }
+
+
+
+@media screen and (min-width:320px) {
+
+
+    .btn1{
+         position:absolute;
+   top:50%;
+   left:45%;
+   margin-top:10px;
+   margin-left:-80px;
+   
+   }
+    
+    .benefits ul li 
+  
+ 
+ }  
+@media screen and (min-width:375px) {
+
+
+    .btn1{
+         position:absolute;
+   top:50%;
+   left:45%;
+   margin-top:10px;
+   margin-left:-80px;
+   
+   }
+  
+ 
+ }  
+@media screen and (min-width:407px) {
+  
+    .btn1{
+        position:absolute;
+        top:50%;
+        left:45%;
+        margin-top:-90px;
+        margin-left:-70px;
+        
+   }
+ }
+@media screen and (min-width:514px) {
+  
+    .btn1{
+        position:absolute;
+        top:50%;
+        left:45%;
+        margin-top:-130px;
+        margin-left:-50px;
+        
+   }
+ }
+
+
+@media screen and (min-width:886px) {
+  
+    .btn1{
+        position:absolute;
+        top:50%;
+        left:45%;
+        margin-top:-160px;
+        margin-left:-50px;
+        
+   }
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /*
+ * Dropit1 v1.1.0
+ * http://dev7studios.com/dropit1
+ *
+ * Copyright 2012, Dev7studios
+ * Free to use and abuse under the MIT license.
+ * http://www.opensource.org/licenses/mit-license.php
+ */
+
+/* These styles assume you are using ul and li */
+.dropit1 {
+    list-style: none;
+  padding: 0;
+  
+    margin: 15px 0 0;
+    float:right;
+    display:inline-block;
+}
+.dropit1 .dropit1-trigger { position: relative; }
+.dropit1 .dropit1-submenu1 {
+    position: absolute;
+    bottom: 100%;
+   
+    right: 0; /* dropdown left or right */
+    z-index: 2000;
+    display: none;
+    min-width: 150px;
+    list-style: none;
+  padding: 20;
+  margin: 100px 2px 15px;
+}
+.dropit1 .dropit1-open .dropit1-submenu1 { 
+    display: block; /*rectangle*/
+    background: #FFFFFF;  
+    box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.30);
+    border-radius: 4px;
+    margin-right: 0px;
+
+    
+
+
+ }
+ .dropit1 .dropit1-open .dropit1-submenu1:after {
+  content: " ";
+  position: absolute;/*triangle*/
+  border-style: solid;
+  border-width: 0 8px 8px;
+  border-color: #FFFFFF transparent;
+  display: block;
+  width: 0;
+  z-index: 1;
+  top: 139px;
+  right: 8px;
+  -ms-transform: rotate(180deg); /* IE 9 */
+    -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
+    transform: rotate(180deg);
+      margin-top:-39px;
+     margin-right: -78px;
+ 
+
+
+
+ }
+ .dropit1 .dropit1-open .dropit1-submenu1 li {
+  display: block;
+  margin-bottom: 20px;
+
+  margin-top: 20px;
+  margin-left: 10px;
+     
+
+ }
+ .dropit1 .dropit1-open .dropit1-submenu1 li:last-child {
+    margin-top: 10px;
+    margin-left: -100px;
+  margin-bottom: 10px;
+
+ }
+ .dropit1 .dropit1-open .dropit1-submenu1 li a {
+  color:#08465E;/*drop down text*/
+  text-decoration: none;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-weight:100;
+  margin-left: 0px;
+     margin-top: 40px;
+     
+ }
+.dropit1 .dropit1-open .dropit1-submenu1 li:last-child {
+    margin-top: 10px;
+    margin-left: -100px;
+  margin-bottom: 10px;
+
+ }
+ 
+
+
+
